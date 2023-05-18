@@ -138,6 +138,10 @@ h2{
     padding-top: 5px;
 }
 
+#hero-img {
+    width: 100%;
+}
+
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
