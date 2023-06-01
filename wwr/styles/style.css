@@ -113,9 +113,9 @@ main section img {
 }
 
 .book, .join {
-    background-color: #005E66;
+    background-color: #FFC933;
     text-decoration: none;
-    color: #EDF6F9;
+    color: #005E66;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
@@ -123,7 +123,7 @@ main section img {
 }
 
 .book:hover, .join:hover {
-    background-color: #FFC933;
+    background-color: #EDF6F9;
     color: #005E66;
 }
 
