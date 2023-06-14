@@ -284,19 +284,20 @@ main h1 {
     padding: 40px;
 }
 
-article {
+.faq-question {
     background-color: #EDF6F9;
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
-article h4 {
+.faq-question h4 {
     color: #6D435A;
     font-family: "Open Sans", Arial, sans-serif;
     margin: 0;
 }
 
-article p {
+.faq-question p {
     margin: 10px 0 0 0;
 }
 
