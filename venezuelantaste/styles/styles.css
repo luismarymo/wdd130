@@ -229,6 +229,89 @@ h5 {
     text-align: center;
 }
 
+/* SUPAGES PROPERTIES */
+
+/* SUBPAGES TITLE */
+
+.sub-page-title {
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.sub-page-title h1, .sub-page-title h2 {
+    color: var(--primary-color);
+}
+
+.sub-page-title h1 {
+    margin: 0;
+    padding-top: 30px;
+}
+
+.sub-page-title h2 {
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.top-title {
+    margin-top: -40px;
+}
+
+/* SUBPAGE 1 (MAIN DISHES) PROPERTIES */
+
+/* SUPAGE 1 - RECIPES */
+
+.recipe-title {
+    background-color: var(--primary-color);
+    max-width: 80%;
+    padding: 18px 30px;
+}
+
+.main-recipe p {
+    padding-left: 40px;
+}
+
+.main-recipe-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.recipe-img {
+    grid-column: 1/4;
+    position: relative;
+}
+
+.recipe-img img {
+    max-width: 100%;
+}
+
+.on-recipe-img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.70);
+    color: var(--accent2-color);
+    padding-right: 15px;
+}
+
+.main-ingredients {
+    grid-column: 4/6;
+    background-color: var(--primary-color);
+    padding-left: 20px;
+}
+
+.main-ingredients p, .main-ingredients ul {
+    margin: 0 20px;
+    padding-left: 0;
+}
+
+.main-ingredients h4 {
+    margin: 12px;
+}
+
 /* SUBPAGE 2 (SIDE DISHES) PROPERTIES */
 
 /* SUBPAGE 2 - ACCORDIONS */
