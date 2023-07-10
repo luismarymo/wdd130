@@ -9,7 +9,7 @@
     --secondary-color: #F7AE26;
     --accent1-color: #4D5129;
     --accent2-color: #FCFFFA;
-  
+
     --heading-font: "Playfair Display", Georgia, serif;
     --paragraph-font: Lato, Helvetica, sans-serif;
 
@@ -202,14 +202,14 @@ footer a:hover {
 }
 
 .home-section2 h4 {
-    margin-right: 0px;
+    margin-right: 20px;
     width: 50%;
     text-align: right;
 }
 
 .home-text {
     text-align: justify;
-    margin: 20px 0px;
+    margin: 20px;
 }
 
 /* HOME PAGE - LINKS */
@@ -257,18 +257,19 @@ h5 {
     margin-top: -40px;
 }
 
-/* SUBPAGE 1 (MAIN DISHES) PROPERTIES */
-
-/* SUPAGE 1 - RECIPES */
-
 .recipe-title {
     background-color: var(--primary-color);
     max-width: 80%;
     padding: 18px 30px;
 }
 
+/* SUBPAGE 1 (MAIN DISHES) PROPERTIES */
+
+/* SUPAGE 1 - RECIPES */
+
 .main-recipe p {
     padding-left: 40px;
+    margin-right: 20px;
 }
 
 .main-recipe-content {
@@ -314,6 +315,24 @@ h5 {
 
 /* SUBPAGE 2 (SIDE DISHES) PROPERTIES */
 
+/* SUBPAGE 2 - RECIPES */
+
+.side-recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.side-recipe div {
+    padding-left: 40px;
+}
+
+.side-recipe img {
+    width: 100%;
+}
+
 /* SUBPAGE 2 - ACCORDIONS */
 
 .accordion {
@@ -331,12 +350,12 @@ h5 {
     transition: 0.4s;
     margin-top: 20px;
   }
-  
+
   .active, .accordion:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
   }
-  
+
   .side-recipe-prep {
     padding: 0 18px;
     background-color: var(--accent2-color);
@@ -351,7 +370,7 @@ h5 {
     float: left;
     margin: 0 10px;
   }
-  
+
   .active:after {
     content: "\02C5"; /* Unicode character for "Modifier Letter Down Arrowhead" sign (˅) */
   }
@@ -368,4 +387,105 @@ h5 {
 
   .side-recipe-prep p {
     color: var(--accent1-color);
+  }
+
+  @media screen and (max-width: 900px) {
+
+    /* DEFAULT PROPERTIES FOR ALL PAGES */
+
+    #hero, .home-section1, .home-section2, .home-section1-content, .home-section2-content, .main-recipe-content, .side-recipe {
+        display: block;
+    }
+
+    /* HEADER AREA PROPERTIES */
+
+    nav, footer, .home-page-links {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* FOOTER AREA PROPERTIES */
+
+    footer {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    .socials {
+        margin-top: 25px;
+    }
+
+    /* HOME PAGE PROPERTIES */
+
+    /* HOME PAGE - HERO */
+
+    .hero-text {
+        padding: 5px 20px;
+        background-color: var(--secondary-color);
+        margin-top: -10px;
+        margin-bottom: auto;
+    }
+
+    .hero-text h1, .hero-text h2 {
+        color: var(--primary-color)
+    }
+
+    #hero img {
+        margin-top: auto;
+    }
+
+    /* HOME PAGE - SECTIONS */
+
+    .home-section1 h4, .home-section2 h4 {
+        width: fit-content;
+        margin: 30px 20px;
+    }
+
+    .home-section1 p, .home-section2 p, .home-section1 img, .home-section2 img {
+        margin: auto;
+    }
+
+    .home-text {
+        margin: 20px;
+    }
+
+    .home-section2 {
+        margin-top: 30px;
+    }
+    
+    /* HOME PAGE - LINKS */
+
+    .home-page-links img {
+        max-width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* SUBPAGES PROPERTIES */
+
+    .recipe-img {
+        text-align: center;
+    }
+
+    .main-ingredients {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .side-recipe {
+        padding: 0 20px;
+    }
+
+    .side-recipe div {
+        padding-left: 10px;
+    }
   }
